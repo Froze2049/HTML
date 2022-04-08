@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+
+    <!--优先级：
+        id > 类 > 元素
+        https://zhuanlan.zhihu.com/p/41604775
+    -->
+
+    <!--3.CSS 类（class）选择器
+            类选择器选择有特定 class 属性的 HTML 元素。
+            如需选择拥有特定 class 的元素，请写一个句点（.）字符，后面跟类名。
+
+        .center{}中
+            所有带有 class="center" 的 HTML 元素将为居中对齐
+        p.center{}中
+            只有具有 class="center" 的 <p> 元素会居中对齐
+    -->
+
+    <style>
+        .center {
+            text-align: center;
+            color: aqua;
+        }
+
+        p.center {
+            color: red;
+        }
+
+        .large {
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center">我是大标题</h1>
+    <p class="center">我是段落</p>
+
+    <!--在这个例子中，<p> 元素将根据 class="center" 和 class="large" 进行样式设置：-->
+    <p class="center large">我是另一个段落</p>
+</body>
+
+</html>

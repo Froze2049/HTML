@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+
+<body>
+    <!--创建“顶部”锚标记 top
+        锚元素的name属性已废弃，使用id属性代替
+    -->
+    <a id="top">顶部</a>
+
+    <!--a 链接标签
+        href：要跳转到的页面
+        target：表示窗口在哪里打开 默认在当前页面
+            _blank：在新标签页中打开
+            _self：在当前的标签页中打开
+    -->
+    <p>
+        <a href="2_图像标签.html">
+            <img src="../resources/image/starbuzz.png" alt="Starbuzz" title="Starbuzz" height="200" width="200" />
+        </a><br />
+        <a href="https://www.bilibili.com" target="_blank">Bilibili</a>
+    </p>
+
+    <img src="http://img.mp.itc.cn/upload/20170515/013be83d35084a70b225d108e1527a21_th.jpg" /><br />
+
+    <!--功能性链接
+        邮件链接：mailto
+        QQ链接：
+    -->
+    <a href="mailto:deepuni@foxmail.com">点击联系我</a><br />
+
+    <!--锚链接
+        1.需要一个锚标记
+        2.使用#和标记名，跳转到该标记
+        3.也可以跳转到其他页面的锚标记，需要在#前加上其他页面
+    -->
+    <a href="#top">回到顶部</a>
+
+</body>
+
+</html>

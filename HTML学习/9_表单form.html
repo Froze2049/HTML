@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录注册</title>
+</head>
+
+<body>
+    <h1>注册</h1>
+    <!--form 表单
+        action：表单提交的位置，可以是网站，也可以是一个请求处理地址
+        method：post、get 提交方式
+            get方式提交：可以在提交的位置的url中看到我们提交的信息，不安全，但高效
+            post方式提交：比较安全，传输大文件
+            （这里我get改成post之后显示HTTP ERROR 405无法跳转网页）
+    -->
+
+    <form action="7_页面结构PageStructure.html" method="get">
+        <!--input 文本输入框 
+            type：指定元素的类型
+            name：指定表单元素的名称
+            value：元素的默认初始值
+            maxlength：最大写入字符长度
+            size：文本框的长度
+            readonly：属性只读，不能修改
+            hidden：隐藏域，可用于传递默认值
+            placeholder：输入框提示信息
+            required：输入框非空判断
+            pattern：正则表达式判断
+        -->
+        <p>名字：<input type="text" name="username" value="999" placeholder="请输入用户名" maxlength="8" size="30"></p>
+
+        <!--密码输入框 input type="password"-->
+        <p>密码：<input type="password" name="pwd" required></p>
+
+        <!--单选框标签
+            input type="radio"
+            value：单选框的值
+            name：组名
+            checked：默认选中
+            disabled：禁用属性，无法被选中
+        -->
+        <p>状态：
+            <input type="radio" value="on" name="status" checked disabled>开
+            <input type="radio" value="off" name="status">关
+        </p>
+
+        <!--多选框
+            input type="checkbox"
+            checked：默认选中
+        -->
+        <p>爱好：
+            <input type="checkbox" value="sleep" name="hobby" checked>睡觉
+            <input type="checkbox" value="code" name="hobby">写代码
+            <input type="checkbox" value="food" name="hobby">吃饭
+            <input type="checkbox" value="game" name="hobby">玩游戏
+        </p>
+
+        <!--下拉框，列表框
+            selected：默认选中
+        -->
+        <p>国家：
+            <select name="country">
+                <option value="cn">中国</option>
+                <option value="us">美国</option>
+                <option value="sw" selected>瑞士</option>
+                <option value="ca">加拿大</option>
+                <option value="jp">日本</option>
+            </select>
+        </p>
+
+        <!--文本域
+            cols：列数
+            rows：行数
+        -->
+        <p>反馈：
+            <textarea name="textarea" cols="30" rows="5">文本内容</textarea>
+        </p>
+
+        <!--文件域
+            input type="file"
+        -->
+        <p>
+            <input type="file" name="files">
+            <input type="button" name="upload" value="上传">
+        </p>
+
+        <!--邮件简单验证-->
+        <p>邮箱：
+            <input type="email" name="email">
+        </p>
+
+        <!--自定义邮箱验证
+            pattern：电子邮箱正则表达式
+        -->
+        <p>自定义邮箱：
+            <input type="text" name="diyemail" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
+        </p>
+
+        <!--URL简单验证-->
+        <p>URL：
+            <input type="url" name="url">
+        </p>
+
+        <!--数字的简单验证
+            input type="number"
+            max&min：最大&最小值
+            step：增长步长
+        -->
+        <p>数字：
+            <input type="number" name="num" max="100" min="0" step="10">
+        </p>
+
+        <!--滑块
+            input type="range"
+        -->
+        <p>滑块：
+            <input type="range" name="range" max="100" min="0" step="1">
+        </p>
+
+        <!--搜索框-->
+        <p>搜索：
+            <input type="search" name="search">
+        </p>
+
+        <!--label 增强鼠标可用性-->
+        <p>
+            <label for="here">点击文字也可以选中框</label>
+            <input type="text" id="here">
+        </p>
+
+        <!--按钮
+            input type="button" 普通按钮
+                value：为按钮赋值，按钮上的文字
+                已经在 HTML5 被 <button>元素取代
+            input type="image" 图片提交按钮
+                src：定义图片的源
+            input type="submit" 提交按钮
+            input type="reset" 重置按钮
+        -->
+        <p>按钮：
+            <input type="button" name="btn1" value="点击">
+            <!--input type="image" src="../resources/image/Submit.jpg"-->
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset" value="清空表单">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
