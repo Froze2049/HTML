@@ -1,0 +1,73 @@
+<!-- https://developer.mozilla.org/zh-CN/docs/Web/CSS/Attribute_selectors -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+
+    <style>
+        /* 存在title属性的<a> 元素 */
+        a[title] {
+            font-style: italic;
+        }
+
+        /* 带有以 href 的属性，且属性值为"https://example.org"的<a> 元素 */
+        a[href="https://example.org"] {
+            color: green;
+        }
+
+        /* 表示带有以 lang 命名的属性的元素，
+        并且该属性是一个以空格作为分隔的值列表，
+        其中至少有一个值为 en-us。 */
+        a[lang~="en-us"] {
+            color: palegreen;
+        }
+
+        /* 表示带有以 lang 命名的属性的元素，
+        属性值为“zh”或是以“zh-”为前缀开头 */
+        a[lang|=zh] {
+            color: pink;
+        }
+
+        /* 以 "#" 开头的页面本地链接 */
+        a[href^="#"] {
+            background-color: gold;
+        }
+
+        /* 以 ".org" 结尾的链接 */
+        a[href$=".org"] {
+            color: red;
+        }
+
+        /* 包含 "example" 的链接 */
+        a[href*="example"] {
+            background-color: silver;
+        }
+
+        /* 包含 "insensitive" 的链接,不区分大小写 */
+        a[href*="insensitive"i] {
+            color: cyan;
+        }
+
+        /* 实验性功能：包含 "cAsE" 的链接，区分大小写
+        a[href*="cAsE"s] {
+            color: pink;
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a title="xxx"" href=" #internal">Internal link</a></li>
+        <li><a href="https://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="https://example.org">Example org link</a></li>
+        <li><a lang="zh-CN">世界您好！</a></li>
+        <li><a lang="zh-TW">世界您好！</a></li>
+        <li><a lang="en-us en-gb en-au en-nz">Hello World!</a></li>
+    </ul>
+</body>
+
+</html>

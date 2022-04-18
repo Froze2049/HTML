@@ -3,27 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>层次选择器</title>
+    <title>组合器</title>
     <style>
-        /*后代选择器：某个元素之后的所有元素*/
+        /*后代组合器：匹配所有位于任意 <body> 元素之内的 <p> 元素*/
         /* body p {
             background: rgb(121, 233, 149);
         } */
 
-        /*子代选择器：某个元素后的一代元素*/
+        /*直接子代选择器：某个元素后的一代元素*/
         /* body>p {
             background: rgb(191, 224, 100);
         } */
 
         /*相邻兄弟选择器：只有相邻的下一个元素*/
-        /* .active+p {
+        .active+p {
             background: rgb(224, 166, 100);
-        } */
-
-        /*通用兄弟选择器：当前选中元素所有向下的兄弟元素*/
-        .active~p {
-            background: rgb(137, 100, 224);
         }
+
+        /*一般兄弟选择器：当前选中元素所有向下的兄弟元素*/
+        /* .active~p {
+            background: rgb(137, 100, 224);
+        } */
     </style>
 </head>
 
