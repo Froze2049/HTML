@@ -29,6 +29,9 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  word-spacing: 1.2px;
 }
 
 /* Layout */
@@ -36,6 +39,7 @@ body {
 section {
   float: left;
   width: 50%;
+  text-indent: 20px;
 }
 
 aside {
@@ -64,21 +68,62 @@ footer {
 
 header,
 footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+  border-top: 5px solid #7761c5;
+  border-bottom: 5px solid #7761c5;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
 
 h1,
 h2 {
-  font-size: 3rem;
   font-family: "jumper_personal_use_onlyBdIt";
 }
 
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
 p,
-li,
-a {
+a,
+li {
   font-family: "mermaidbold";
-  font-size: 2rem;
+  font-size: 1.9rem;
+}
+
+section a {
+  background-image: url("image/icons8-external-link-32.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px 20px;
+  padding-right: 20px;
+}
+
+a:link {
+  color: #7761c5;
+}
+
+a:visited {
+  color: #7761c5;
+}
+
+a:focus {
+  color: #7761c5;
+  text-decoration-line: none;
+  outline: none;
+}
+
+a:hover {
+  color: #7761c5;
+  text-decoration-line: none;
+}
+
+a:active {
+  background-color: #e3ddfb;
+  color: #7761c5;
 }
