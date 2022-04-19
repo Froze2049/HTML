@@ -89,6 +89,10 @@ h2 {
   font-size: 2.3rem;
 }
 
+ul {
+  list-style-type: circle;
+}
+
 p,
 a,
 li {
@@ -97,7 +101,7 @@ li {
 }
 
 section a {
-  background-image: url("image/icons8-external-link-32.png");
+  background-image: url("images/icons8-external-link-32.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 20px 20px;
@@ -126,4 +130,47 @@ a:hover {
 a:active {
   background-color: #e3ddfb;
   color: #7761c5;
+}
+
+/* 样式化导航栏菜单 */
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  outline: none;
+  width: 16rem;
+  height: 8rem;
+  display: block;
+  line-height: 8rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+}
+
+nav a:link,
+nav a:visited,
+nav a:focus {
+  color: #7761c5;
+  background-color: #e3ddfb;
+}
+
+nav a:focus {
+  background-color: #f0cdf7;
+}
+
+nav a:hover {
+  color: #7761c5;
+  background-color: #f0cdf7;
+}
+
+nav a:active {
+  color: #7761c5;
+  background-color: #f4a9dc;
 }
