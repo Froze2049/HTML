@@ -73,7 +73,6 @@ nav a {
 
 .grid {
   display: grid;
-  /* grid-template-areas: "a b"; */
   grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
