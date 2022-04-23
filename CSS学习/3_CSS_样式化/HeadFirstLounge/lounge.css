@@ -1,0 +1,107 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2.4rem;
+}
+
+h1,
+h2 {
+  color: #01b4b5;
+}
+
+body p {
+  text-indent: 2rem;
+}
+
+p#guarantee {
+  line-height: 3rem;
+  color: #444444;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+
+  /* 设置边框样式 */
+  border-width: 0.1rem;
+  border-style: dashed;
+  border-color: white;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+
+  /* 设置背景样式 */
+  /* background-color: #8ac3c4;
+  background-image: url("images/background.gif");
+  background-repeat: no-repeat;
+  background-position: top left; */
+
+  /* 可以对其进行简写 */
+  background: #8ac3c4 url("images/background.gif") no-repeat top left;
+
+  /* 设置内边距、左内边距、外边距、右外边距 */
+  padding: 2.5rem;
+  padding-left: 8rem;
+  margin: 3rem;
+  margin-right: 32rem;
+}
+
+div#drinks {
+  border-width: 0.1rem;
+  border-style: dashed;
+  border-color: #007e7e;
+  width: 20rem;
+  padding: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-image: url("images/cocktail.gif");
+  background-repeat: repeat-x;
+  float: right;
+}
+
+div#drinks p {
+  text-indent: 0rem;
+}
+
+div#drinks h2 {
+  color: black;
+}
+
+div#drinks h3 {
+  color: #d12c47;
+}
+
+#drinks a {
+  color: #007e7e;
+}
+
+#drinks a:link {
+  color: #007e7e;
+}
+
+#drinks a:visited {
+  color: #333333;
+}
+
+#drinks a:hover {
+  background: #f88396;
+  color: #0d5353;
+}
+
+div#copyright {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: normal;
+  /* 对margin进行简写，顺序是上、右、下、左 */
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+span.cd {
+  font-style: italic;
+}
+
+span.artist {
+  font-weight: bold;
+}
