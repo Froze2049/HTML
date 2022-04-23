@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning</title>
+    <style>
+        /* 相对定位(relative positioning)让你能够把一个正常布局流中的元素
+        从它的**默认位置**按坐标进行相对移动。比如将一个图标往下调一点，以便放置文字 */
+        .positioned {
+            position: relative;
+            /* 顶部距离默认位置的距离 */
+            top: 20px;
+            /* 左部距离默认位置的距离 */
+            left: 30px;
+            background: rgba(255, 84, 104, .3);
+            border: 2px solid rgb(255, 84, 104);
+        }
+
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        p {
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Positioning</h1>
+
+    <p>I am a basic block level element.</p>
+    <p class="positioned">I am a basic block level element.</p>
+    <p>I am a basic block level element.</p>
+</body>
+
+</html>

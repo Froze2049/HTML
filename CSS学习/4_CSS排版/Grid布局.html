@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /* 创建一个Grid布局:
+        Grid布局则被设计用于同时在两个维度上把元素按行和列排列整齐*/
+        .wrapper {
+            display: grid;
+            /* 定义了三个1fr的列，还有两个100px的行 */
+            /* css fr 单位是一个自适应单位,fr单位被用于在一系列长度值中分配剩余空间,
+            如果多个已指定了多个部分,则剩下的空间根据各自的数字按比例分配 */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            /* gap CSS属性是行间隙row-gap和列间隙column-gap的简写属性，
+            用于指定网格行和列之间的间隙大小 */
+            gap: 10px;
+        }
+
+        .wrapper>div {
+            background-color: #cfe8dc;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 15px;
+            /* margin: 0px 10px 10px 0px; */
+            /* width: 120px; */
+            /* height: 60px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four</div>
+        <div class="box5">Five</div>
+        <div class="box6">Six</div>
+    </div>
+</body>
+
+</html>

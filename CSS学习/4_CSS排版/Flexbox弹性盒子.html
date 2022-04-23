@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* 创建一个flexbox布局:
+        Flexbox 是CSS 弹性盒子布局模块（Flexible Box Layout Module）的缩写，
+        它被专门设计出来用于创建横向或是纵向的一维页面布局。 */
+        .wrapper {
+            display: flex;
+            /* 初值为row，可以改变为column */
+            flex-direction: row;
+        }
+
+        .wrapper>div {
+            /* 元素会根据自身的宽度与高度来确定尺寸，但是会伸长并吸收 flex 容器中额外的自由空间，
+            也会缩短自身来适应 flex 容器。这相当于将属性设置为 "flex: 1 1 auto". */
+            flex: auto;
+
+            background-color: #cfe8dc;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 15px;
+            margin: 0px 10px 10px 0px;
+            /* width: 120px; */
+            /* height: 60px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+    </div>
+</body>
+
+</html>

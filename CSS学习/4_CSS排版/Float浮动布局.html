@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        /* 把一个元素“浮动”(float)起来，会改变该元素本身和在正常布局流（normal flow）中
+        跟随它的其他元素的行为。这一元素会浮动到左侧或右侧，并且从正常布局流(normal flow)中
+        /* 移除，这时候其他的周围内容就会在这个被设置浮动(float)的元素周围环绕。 */
+        /* float 属性有四个可能的值：
+            left — 将元素浮动到左侧。
+            right — 将元素浮动到右侧。
+            none — 默认值, 不浮动。
+            inherit — 继承父元素的浮动属性。 */
+        .box {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 0px 30px 0px 0px;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #4fb9e3;
+            background-color: #cfe8dc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple float example</h1>
+
+    <div class="box">Float</div>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+        vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at
+        ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
+        orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis
+        lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue.
+        Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis,
+        eget fermentum sapien.</p>
+</body>
+
+</html>
